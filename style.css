@@ -44,7 +44,13 @@ body h2 {
 
 p {
   color: #efc281;
-  max-width: 70%;
+  max-width: 60%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.flex-container-hutao img {
+  max-width: 60%;
 }
 
 .input-id {
@@ -190,14 +196,25 @@ p {
   justify-content: space-between;
 }
 
-.flex-container-hutao {
+.flex-container-mika {
+  flex-direction: column;
   display: flex;
+  margin-top: 4%;
   margin-left: 5%;
   margin-right: 5%;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Search Input Wrapper */
+.flex-container-hutao {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: -1%;
+}
+
 .search-input-wrapper {
   display: flex;
   align-items: center;
@@ -206,7 +223,6 @@ p {
   width: 50%;
 }
 
-/* Search Input */
 .search-input {
   width: 100%;
   padding: 12px;
@@ -218,7 +234,6 @@ p {
   transition: all 0.3s ease;
 }
 
-/* Search Icon Inside Input Field */
 .search-btn {
   background-color: transparent;
   border: none;
@@ -229,20 +244,17 @@ p {
   margin-left: 10px;
 }
 
-/* Button Hover Effect */
 .search-btn:hover {
   color: #22ffe4;
   text-shadow: 0 0 10px rgba(34, 254, 227, 1);
 }
 
-/* Input Hover and Focus */
 .search-input:hover,
 .search-input:focus {
   border-color: #22ffe4;
   box-shadow: 0 0 10px rgba(34, 254, 227, 0.8);
 }
 
-/* Glowing effect on input field */
 .search-input:focus {
   background-color: #fff;
 }
@@ -271,31 +283,29 @@ p {
   right: 0;
 }
 
-/* Ensure the images appear below the sidebar when triggered */
 .sidebar-active .left-img,
 .sidebar-active .right-img {
-  bottom: 50px; /* Adjust to desired position below the sidebar */
+  bottom: 50px;
 }
 
-/* Sidebar Styles */
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 20%;
-  background-image: url("assets/images/sidebar.png"); /* Set the background image */
-  background-size: cover; /* Ensure the image covers the entire sidebar */
-  background-repeat: no-repeat; /* Prevent tiling of the image */
-  background-position: center; /* Center the image */
-  background-color: transparent; /* Transparent button background */
+  background-image: url("assets/images/sidebar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
   transform: translateX(-100%);
-  transition: transform 0.3s ease; /* Animation for sliding */
+  transition: transform 0.3s ease;
   z-index: 1000;
 }
 
 .sidebar.show {
-  transform: translateX(0); /* Slide into view */
+  transform: translateX(0);
 }
 
 .sidebar .menu {
@@ -305,40 +315,38 @@ p {
 }
 
 .sidebar .logout {
-  margin-top: auto; /* Push Logout button to the bottom */
+  margin-top: auto;
   width: 80%;
   text-align: center;
-  background-image: url("assets/images/logout.png"); /* Set the background image */
-  background-size: cover; /* Ensure the image covers the entire sidebar */
-  /*background-repeat: no-repeat; /* Prevent tiling of the image */
-  background-position: center; /* Center the image */
+  background-image: url("assets/images/logout.png");
+  background-size: cover;
+  background-position: center;
 }
 
-/* Hamburger Icon Styles */
 .toggle-btn {
   position: fixed;
   top: 15px;
   left: 15px;
   z-index: 1100;
   cursor: pointer;
-  width: 60px; /* Icon width */
-  height: 60px; /* Icon height */
-  background-image: url("assets/images/menu.png"); /* Use menu.png as the icon */
-  background-size: contain; /* Ensure the image fits properly */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Center the icon */
-  background-color: transparent; /* Transparent button background */
-  border: none; /* Remove button border */
-  transition: left 0.3s ease; /* Smooth movement animation */
+  width: 60px;
+  height: 60px;
+  background-image: url("assets/images/menu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  transition: left 0.3s ease;
 }
 
 .toggle-btn.clicked {
-  background-color: transparent; /* Keep background transparent when clicked */
+  background-color: transparent;
 }
 
 .toggle-btn:focus {
-  outline: none; /* Remove focus outline */
-  background-color: transparent; /* Ensure background stays transparent */
+  outline: none;
+  background-color: transparent;
 }
 
 .sidebar .menu .nav-link,
@@ -353,18 +361,17 @@ p {
 
 .sidebar .menu .nav-link:hover,
 .sidebar .logout a:hover {
-  color: #22fee3; /* Change text color on hover */
-  text-shadow: 0px 0px 8px rgba(34, 254, 227, 1); /* Enhance glow on hover */
+  color: #22fee3;
+  text-shadow: 0px 0px 8px rgba(34, 254, 227, 1);
 }
 
 .sidebar.show + .toggle-btn {
   transition: left 0.3s ease;
   border: none;
   scale: 1.3;
-  left: 16.5%; /* Move with the sidebar */
+  left: 16.5%;
 }
 
-/* Overlay for Background Effect */
 .overlay {
   position: fixed;
   top: 0;

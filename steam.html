@@ -1,271 +1,308 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>LOT | Limbus Company</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOT | Steam Wallet</title>
 
-        <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        rel="stylesheet"
-        />
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
-        />
-        <link href="./style.css" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    </head>
-    <body>
-        <!-- Sidebar -->
-        <div class="sidebar" id="sidebar">
-        <div class="menu p-3">
-            <ul class="nav flex-column">
-            <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-home"></i> Home </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                <i class="fas fa-history"></i> Transaction History
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                <i class="fas fa-cogs"></i> Settings
-                </a>
-            </li>
-            </ul>
-            <div class="logout">
-            <a href="#" class="btn">Logout</a>
-            </div>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="menu p-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link"> <i class="fas fa-home"></i> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-history"></i> Transaction History
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-cogs"></i> Settings
+            </a>
+          </li>
+        </ul>
+        <div class="logout">
+          <a href="#" class="btn">Logout</a>
         </div>
-        </div>
+      </div>
+    </div>
 
-        <button class="toggle-btn" id="toggleSidebar"></button>
+    <button class="toggle-btn" id="toggleSidebar"></button>
 
-        <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay"></div>
 
-        <!-- Main Content -->
-        <div class="flex-container" style="background-color: black">
+    <!-- Main Content -->
+    <div class="flex-container" style="background-color: black">
+      <div>
+        <a href="index.html"><h1>Library of Top-up</h1></a>
+      </div>
+      <div class="search-input-wrapper">
+        <input type="text" class="search-input" placeholder="Search..." />
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div><h1>Furina♡</h1></div>
+    </div>
+
+    <div
+      class="flex-container-hutao"
+      style="margin-left: 10%; margin-top: 5%; margin-bottom: -1%"
+    >
+      <div>
+        <h2>Steam Wallet</h2>
+        <img src="assets/images/steam.png" alt="" />
+        <p>
+          <b>Add funds to your Steam Wallet.</b> Funds in your Steam Wallet may
+          be used for the purchase of any game on Steam or within a game that
+          supports Steam transactions.
+        </p>
+      </div>
+      <div class="opsi">
         <div>
-            <a href="index.html"><h1>Library of Top-up</h1></a>
+          <input type="text" class="input-id" placeholder="In Game ID" />
         </div>
-        <div class="search-input-wrapper">
-            <input type="text" class="search-input" placeholder="Search..." />
-            <button class="search-btn">
-            <i class="fas fa-search"></i>
-            </button>
-        </div>
-        <div><h1>♡Furina♡</h1></div>
-        </div>
+        <label>
+          <input
+            type="radio"
+            name="product"
+            selected
+            checked
+            class="card-input-element"
+          />
 
-        <div
-        class="flex-container-hutao"
-        style="margin-left: 10%; margin-top: 5%; margin-bottom: -1%"
+          <div class="card card-default card-input">
+            <div class="card-header">70 Lunacy</div>
+            <div class="card-body">Rp16.000,00</div>
+          </div>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="product"
+            selected
+            checked
+            class="card-input-element"
+          />
+
+          <div class="card card-default card-input">
+            <div class="card-header">294 Lunacy</div>
+            <div class="card-body">Rp65.000,00</div>
+          </div>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="product"
+            selected
+            checked
+            class="card-input-element"
+          />
+
+          <div class="card card-default card-input">
+            <div class="card-header">1014 Lunacy</div>
+            <div class="card-body">Rp193.000,00</div>
+          </div>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="product"
+            selected
+            checked
+            class="card-input-element"
+          />
+
+          <div class="card card-default card-input">
+            <div class="card-header">2147 Lunacy</div>
+            <div class="card-body">Rp385.000,00</div>
+          </div>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="product"
+            selected
+            checked
+            class="card-input-element"
+          />
+
+          <div class="card card-default card-input">
+            <div class="card-header">4103 Lunacy</div>
+            <div class="card-body">Rp674.000,00</div>
+          </div>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="product"
+            selected
+            checked
+            class="card-input-element"
+          />
+
+          <div class="card card-default card-input">
+            <div class="card-header">8336 Lunacy</div>
+            <div class="card-body">Rp1.283.000,00</div>
+          </div>
+        </label>
+        <div class="bayar" style="margin-top: 5%">
+          <h2>Pembayaran</h2>
+          <label>
+            <input
+              type="radio"
+              name="metode"
+              selected
+              checked
+              class="card-input-element"
+            />
+
+            <div class="card card-default card-input">
+              <div class="card-header">
+                <img
+                  src="assets/images/qris.png"
+                  style="min-height: 2rem; max-height: 2rem"
+                  alt=""
+                />
+              </div>
+              <div class="card-body" style="margin-top: -12%">QRIS</div>
+            </div>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="metode"
+              selected
+              checked
+              class="card-input-element"
+            />
+
+            <div class="card card-default card-input">
+              <div class="card-header">
+                <img
+                  src="assets/images/gopay.png"
+                  style="min-height: 2rem; max-height: 2.1rem"
+                  alt=""
+                />
+              </div>
+              <div class="card-body" style="margin-top: -12%">GOPAY</div>
+            </div>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="metode"
+              selected
+              checked
+              class="card-input-element"
+            />
+
+            <div class="card card-default card-input">
+              <div class="card-header">
+                <img
+                  src="assets/images/ovo.png"
+                  style="min-height: 1rem; max-height: 2rem"
+                  alt=""
+                />
+              </div>
+              <div class="card-body" style="margin-top: -12%">OVO</div>
+            </div>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="metode"
+              selected
+              checked
+              class="card-input-element"
+            />
+
+            <div class="card card-default card-input">
+              <div class="card-header">
+                <img
+                  src="assets/images/dana.png"
+                  style="min-height: 1rem; max-height: 2rem"
+                  alt=""
+                />
+              </div>
+              <div class="card-body" style="margin-top: -12%">DANA</div>
+            </div>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="metode"
+              selected
+              checked
+              class="card-input-element"
+            />
+
+            <div class="card card-default card-input">
+              <div class="card-header">
+                <img
+                  src="assets/images/bank.png"
+                  style="min-height: 1rem; max-height: 2rem"
+                  alt=""
+                />
+              </div>
+              <div
+                class="card-body"
+                style="font-size: x-small; margin-top: -6%"
+              >
+                Transfer Bank
+              </div>
+            </div>
+          </label>
+        </div>
+        <a href="paymentqris.html"
+          ><button class="furina" type="submit">Lanjut Pembayaran</button></a
         >
-        <div>
-            <h2>Steam Wallet</h2>
-            <img src="assets/images/steam.png" style="max-width: 70%" alt="" />
-            <p>
-            <b>Steam Wallet</b> is an indie strategy role-playing video game for
-            Microsoft Windows and mobile devices using iOS or Android, developed
-            and published by South Korean studio Project Moon.
-            </p>
-        </div>
-        <div class="opsi">
-            <div>
-            <input type="text" class="input-id" placeholder="In Game ID" />
-            </div>
-            <label>
-            <input
-                type="radio"
-                name="product"
-                selected
-                checked
-                class="card-input-element"
-            />
+      </div>
+    </div>
 
-            <div class="card card-default card-input">
-                <div class="card-header">70 Lunacy</div>
-                <div class="card-body">Rp16.000,00</div>
-            </div>
-            </label>
-            <label>
-            <input
-                type="radio"
-                name="product"
-                selected
-                checked
-                class="card-input-element"
-            />
+    <img
+      src="assets/images/top_left.png"
+      class="top-left-img"
+      style="width: 25vh; height: 25vh"
+    />
+    <img
+      src="assets/images/top_right.png"
+      class="top-right-img"
+      style="width: 25vh; height: 25vh"
+    />
+    <img
+      src="assets/images/left.png"
+      class="left-img"
+      style="width: 25vh; height: 25vh"
+    />
+    <img
+      src="assets/images/right.png"
+      class="right-img"
+      style="width: 25vh; height: 25vh"
+    />
+  </body>
 
-            <div class="card card-default card-input">
-                <div class="card-header">294 Lunacy</div>
-                <div class="card-body">Rp65.000,00</div>
-            </div>
-            </label>
-            <label>
-            <input
-                type="radio"
-                name="product"
-                selected
-                checked
-                class="card-input-element"
-            />
-
-            <div class="card card-default card-input">
-                <div class="card-header">1014 Lunacy</div>
-                <div class="card-body">Rp193.000,00</div>
-            </div>
-            </label>
-            <label>
-            <input
-                type="radio"
-                name="product"
-                selected
-                checked
-                class="card-input-element"
-            />
-
-            <div class="card card-default card-input">
-                <div class="card-header">2147 Lunacy</div>
-                <div class="card-body">Rp385.000,00</div>
-            </div>
-            </label>
-            <label>
-            <input
-                type="radio"
-                name="product"
-                selected
-                checked
-                class="card-input-element"
-            />
-
-            <div class="card card-default card-input">
-                <div class="card-header">4103 Lunacy</div>
-                <div class="card-body">Rp674.000,00</div>
-            </div>
-            </label>
-            <label>
-            <input
-                type="radio"
-                name="product"
-                selected
-                checked
-                class="card-input-element"
-            />
-
-            <div class="card card-default card-input">
-                <div class="card-header">8336 Lunacy</div>
-                <div class="card-body">Rp1.283.000,00</div>
-            </div>
-            </label>
-            <div class="bayar" style="margin-top: 5%;">
-            <h2>Pembayaran</h2>
-            <label>
-                <input
-                type="radio"
-                name="metode"
-                selected
-                checked
-                class="card-input-element"
-                />
-    
-                <div class="card card-default card-input">
-                <div class="card-header"><img src="assets/images/qris.png" style="min-height:2rem; max-height: 2rem;" alt=""></div>
-                <div class="card-body" style="margin-top: -12%;">QRIS</div>
-                </div>
-            </label>
-            <label>
-                <input
-                type="radio"
-                name="metode"
-                selected
-                checked
-                class="card-input-element"
-                />
-    
-                <div class="card card-default card-input">
-                <div class="card-header"><img src="assets/images/gopay.png" style="min-height:2rem; max-height: 2.1rem;" alt=""></div>
-                <div class="card-body" style="margin-top: -12%;">GOPAY</div>
-                </div>
-            </label>
-            <label>
-                <input
-                type="radio"
-                name="metode"
-                selected
-                checked
-                class="card-input-element"
-                />
-    
-                <div class="card card-default card-input">
-                <div class="card-header"><img src="assets/images/ovo.png" style="min-height:1rem; max-height: 2rem;" alt=""></div>
-                <div class="card-body" style="margin-top: -12%;">OVO</div>
-                </div>
-            </label>  
-            <label>
-                <input
-                type="radio"
-                name="metode"
-                selected
-                checked
-                class="card-input-element"
-                />
-    
-                <div class="card card-default card-input">
-                <div class="card-header"><img src="assets/images/dana.png" style="min-height:1rem; max-height: 2rem;" alt=""></div>
-                <div class="card-body" style="margin-top: -12%;">DANA</div>
-                </div>
-            </label> 
-            <label>
-                <input
-                type="radio"
-                name="metode"
-                selected
-                checked
-                class="card-input-element"
-                />
-    
-                <div class="card card-default card-input">
-                <div class="card-header"><img src="assets/images/bank.png" style="min-height:1rem; max-height: 2rem;" alt=""></div>
-                <div class="card-body" style="font-size: x-small ;margin-top: -6%;">Transfer Bank</div>
-                </div>
-            </label>  
-            </div>
-            <button class="furina" type="submit">Lanjut Pembayaran</button>
-        </div>
-        </div>
-
-        <img
-        src="assets/images/top_left.png"
-        class="top-left-img"
-        style="width: 25vh; height: 25vh"
-        />
-        <img
-        src="assets/images/top_right.png"
-        class="top-right-img"
-        style="width: 25vh; height: 25vh"
-        />
-        <img
-        src="assets/images/left.png"
-        class="left-img"
-        style="width: 25vh; height: 25vh"
-        />
-        <img
-        src="assets/images/right.png"
-        class="right-img"
-        style="width: 25vh; height: 25vh"
-        />
-    </body>
-
-    <script src="logic.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-    ></script>
-    </html>
+  <script src="logic.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
